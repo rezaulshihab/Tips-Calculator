@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">-->
+    <!--Style Link-->
+    <link
+      rel="shortcut icon"
+      href="img/javaScript-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tips Calculator</title>
+  </head>
+  <body>
+    <!--Main Contant-->
+    <div id="main-contant">
+      <div class="tips">
+        <h1 class="helo">Tips Calculator</h1>
+      </div>
+      <!--From Input-->
+      <div id="from">
+        <label for="">Total Bill</label>
+        <input id="val" type="number" placeholder="Enter Your Total Bill" />
+        <label for="">Tip%</label>
+        <input id="val-2" type="number" placeholder="Expected Tip" />
+        <p>People</p>
+        <div class="inner-people">
+          <ul>
+            <li id="maines">-</li>
+            <li id="sum">1</li>
+            <li id="plus">+</li>
+          </ul>
+          <button id="btn">Calculate</button>
+        </div>
+      </div>
+      <!--Summary-->
+      <div class="summary block">
+        <h1>Summary</h1>
+        <div>
+          <h3>TOTAL BILL</h3>
+          <h3>$<samp id="total">0</samp></h3>
+        </div>
+        <div>
+          <h3>TIP AMOUNT</h3>
+          <h3>$<samp id="tip">0</samp></h3>
+        </div>
+        <hr />
+        <div>
+          <h3>TOTALPER PERSON</h3>
+          <h3>$<samp id="enter">0</samp></h3>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
